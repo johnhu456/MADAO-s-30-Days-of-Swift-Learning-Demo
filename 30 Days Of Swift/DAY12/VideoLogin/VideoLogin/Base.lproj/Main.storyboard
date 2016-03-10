@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qqg-EZ-bGp">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VideoLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWj-Wz-0tm">
+                                <rect key="frame" x="30" y="446" width="540" height="40"/>
+                                <color key="backgroundColor" red="0.43921568630000002" green="0.77647058820000003" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="flN-vl-pzp"/>
+                                </constraints>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.95686274510000002" green="0.94509803920000002" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginButtonOnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PZT-EE-oem"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXi-8d-ieL">
+                                <rect key="frame" x="30" y="516" width="540" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="s1x-28-QBG"/>
+                                </constraints>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.44257427659999998" green="0.77637705180000005" blue="0.23601315610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signUpButtonOnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KxB-am-rAk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LXi-8d-ieL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="3Ef-Ub-Xmu"/>
+                            <constraint firstAttribute="trailing" secondItem="hWj-Wz-0tm" secondAttribute="trailing" constant="30" id="3u1-6N-uUS"/>
+                            <constraint firstAttribute="trailing" secondItem="LXi-8d-ieL" secondAttribute="trailing" constant="30" id="5Ih-X1-A4t"/>
+                            <constraint firstItem="LXi-8d-ieL" firstAttribute="top" secondItem="hWj-Wz-0tm" secondAttribute="bottom" constant="30" id="Ruq-5j-skw"/>
+                            <constraint firstItem="hWj-Wz-0tm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="cQk-Qi-7wz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LXi-8d-ieL" secondAttribute="bottom" constant="44" id="h9Y-ND-Zvv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4dK-0Q-rcz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1373" y="648"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wPq-RY-lA6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qqg-EZ-bGp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y1e-0V-vaU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qiG-xF-wk5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hEh-w0-u73" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="650" y="648"/>
+        </scene>
+    </scenes>
+</document>
