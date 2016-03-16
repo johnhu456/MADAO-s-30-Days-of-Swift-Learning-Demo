@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LuckyMachine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hyperspace - iPhone" translatesAutoresizingMaskIntoConstraints="NO" id="uRc-UN-MvI">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bingo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjN-vW-KNz">
+                                <rect key="frame" x="246" y="531" width="108" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="EyK-Tb-3da"/>
+                                    <constraint firstAttribute="width" constant="108" id="SgU-vr-nxx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" red="1" green="0.59215686270000001" blue="0.68536496629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mE6-eu-tFw">
+                                <rect key="frame" x="192" y="435" width="216" height="49"/>
+                                <color key="backgroundColor" red="1" green="0.84843568520000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="23"/>
+                                <state key="normal" title="Go"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonGoOnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RwG-z8-5QL"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ldj-Hj-df4">
+                                <rect key="frame" x="0.0" y="245" width="600" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="G09-7t-Hlb"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="R1E-Fs-dN0"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="UVu-uY-DwV"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mE6-eu-tFw" firstAttribute="height" secondItem="EjN-vW-KNz" secondAttribute="height" id="2zh-0X-zTF"/>
+                            <constraint firstAttribute="trailing" secondItem="Ldj-Hj-df4" secondAttribute="trailing" id="3Lr-qG-2SN"/>
+                            <constraint firstItem="uRc-UN-MvI" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="AS5-M2-CWU"/>
+                            <constraint firstItem="uRc-UN-MvI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GLq-n0-i9i"/>
+                            <constraint firstItem="mE6-eu-tFw" firstAttribute="centerX" secondItem="uRc-UN-MvI" secondAttribute="centerX" id="HOo-XF-uJk"/>
+                            <constraint firstItem="EjN-vW-KNz" firstAttribute="top" secondItem="mE6-eu-tFw" secondAttribute="bottom" constant="47" id="Kkw-CC-IXd"/>
+                            <constraint firstItem="mE6-eu-tFw" firstAttribute="top" secondItem="Ldj-Hj-df4" secondAttribute="bottom" constant="90" id="OnY-zF-Yfc"/>
+                            <constraint firstAttribute="trailing" secondItem="uRc-UN-MvI" secondAttribute="trailing" id="UaV-JW-kJr"/>
+                            <constraint firstItem="Ldj-Hj-df4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VLo-pn-SLb"/>
+                            <constraint firstItem="EjN-vW-KNz" firstAttribute="centerX" secondItem="uRc-UN-MvI" secondAttribute="centerX" id="cSg-Ai-KGm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EjN-vW-KNz" secondAttribute="bottom" constant="20" id="kle-3b-lvR"/>
+                            <constraint firstItem="mE6-eu-tFw" firstAttribute="width" secondItem="EjN-vW-KNz" secondAttribute="width" multiplier="2" id="mXp-uv-KFT"/>
+                            <constraint firstItem="uRc-UN-MvI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="u9e-NW-QfH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emojiPicker" destination="Ldj-Hj-df4" id="j8n-OB-0Tb"/>
+                        <outlet property="lblTip" destination="EjN-vW-KNz" id="9Ih-TE-TJb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="644" y="659"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hyperspace - iPhone" width="1242" height="2208"/>
+    </resources>
+</document>

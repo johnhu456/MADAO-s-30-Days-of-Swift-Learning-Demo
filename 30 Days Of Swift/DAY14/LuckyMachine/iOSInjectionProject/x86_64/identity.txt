@@ -1,0 +1,2 @@
+/Users/HU/Library/Developer/Xcode/DerivedData/LuckyMachine-fxnykavierkbtpgknrburxlvywgj/Build/Products/Debug-iphonesimulator/LuckyMachine.app
+
