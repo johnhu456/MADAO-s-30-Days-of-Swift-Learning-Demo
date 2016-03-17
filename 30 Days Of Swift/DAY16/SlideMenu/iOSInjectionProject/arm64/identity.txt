@@ -1,0 +1,2 @@
+/Users/HU/Library/Developer/Xcode/DerivedData/SlideMenu-dnemgbimgtnadggxwsrutfwwryof/Build/Products/Debug-iphoneos/SlideMenu.app
+iPhone Developer
