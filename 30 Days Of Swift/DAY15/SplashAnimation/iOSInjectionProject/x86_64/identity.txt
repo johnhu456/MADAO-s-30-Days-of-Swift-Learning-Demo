@@ -1,0 +1,2 @@
+/Users/HU/Library/Developer/Xcode/DerivedData/SplashAnimation-bxwtuzshmxoztjdgzypllojurhiz/Build/Products/Debug-iphonesimulator/SplashAnimation.app
+
