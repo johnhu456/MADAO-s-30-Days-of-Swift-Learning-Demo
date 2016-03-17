@@ -8,13 +8,13 @@
 
 import UIKit
 
-protocol MenuDelegate{
+protocol MenuDelegate : NSObjectProtocol{
     func cellBeClicked(with title:String)
 }
 
 class MenuTableViewController: UITableViewController {
     
-    var menuDelegate: MenuDelegate?
+    weak var menuDelegate: MenuDelegate?
     let menuTitleArray = ["1","2","3","4"]
     
     override func viewDidLoad() {
