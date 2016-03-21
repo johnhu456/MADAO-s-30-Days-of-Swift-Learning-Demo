@@ -7,9 +7,13 @@
 //
 
 import UIKit
-
+protocol MenuDelegate:NSObjectProtocol{
+    func didUnload()
+}
 class MenuViewController: UIViewController {
 
+    weak var delegate : MenuDelegate?
+    
     var buttonAudio = UIButton(type: UIButtonType.Custom)
     var buttonChat = UIButton(type: UIButtonType.Custom)
     var buttonLink = UIButton(type: UIButtonType.Custom)
@@ -134,6 +138,7 @@ class MenuViewController: UIViewController {
             }) { (success) -> Void in
                 self.removeFromParentViewController()
                 self.view.removeFromSuperview()
+                self.delegate?.didUnload()
         }
     }
     

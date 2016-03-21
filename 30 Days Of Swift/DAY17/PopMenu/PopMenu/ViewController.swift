@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,MenuDelegate {
 
     
     var menu:MenuViewController?
@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         menu = MenuViewController()
+        menu?.delegate = self
+        
     }
 
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
@@ -28,7 +30,9 @@ class ViewController: UIViewController {
         self.view.addSubview((menu?.view)!)
     }
     
-
+    func didUnload() {
+        menu = nil
+    }
 
 }
 
