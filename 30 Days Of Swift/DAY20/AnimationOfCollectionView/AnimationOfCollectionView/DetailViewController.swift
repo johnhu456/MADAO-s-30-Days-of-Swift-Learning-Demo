@@ -31,24 +31,28 @@ class DetailViewController: UIViewController,UINavigationControllerDelegate {
     }
 
     func setupGestureRecognizer() {
-        //设置手势及其方位
+        //设置边缘触控手势及其方位
         let edgeGestureRecognizer = UIScreenEdgePanGestureRecognizer(target: self,action: #selector(DetailViewController.edgePanGesture(_:)))
         edgeGestureRecognizer.edges = UIRectEdge.Left
         self.view.addGestureRecognizer(edgeGestureRecognizer)
     }
     
     func edgePanGesture(gestureRecognizer:UIScreenEdgePanGestureRecognizer) {
+        //计算动画完成度Progress
         var progress = gestureRecognizer.translationInView(self.view).x/self.view.frame.size.width
         progress = min(1.0, max(0.0, progress))
         
         if gestureRecognizer.state == UIGestureRecognizerState.Began{
+            //手势开始，执行Pop动作，触发动画
             percentTransition = UIPercentDrivenInteractiveTransition()
             self.navigationController?.popViewControllerAnimated(true)
         }
         else if gestureRecognizer.state == UIGestureRecognizerState.Changed{
+            //手势执行过程中，不停通过progress去更新动画状态
             percentTransition?.updateInteractiveTransition(progress)
         }
         else if gestureRecognizer.state == UIGestureRecognizerState.Cancelled || gestureRecognizer.state == UIGestureRecognizerState.Ended {
+            //手势取消或者结束，判断是否完成动画或者取消。
             if progress > 0.1
             {
                 percentTransition?.finishInteractiveTransition()

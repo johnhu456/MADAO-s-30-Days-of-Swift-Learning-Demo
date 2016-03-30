@@ -45,7 +45,9 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
     //MARK: - Translation
     func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         if toVC.isKindOfClass(DetailViewController)
+            //建议对第二个ViewController进行判断，否则pop回来动画混乱，如果有必要还可以对operation进行判断（push or pop）
         {
+            //创建一个你刚写的类的对象即可。
             let transition = MoveAnimation()
             return transition
         }
