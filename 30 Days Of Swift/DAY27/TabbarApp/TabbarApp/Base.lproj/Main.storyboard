@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ztk-2C-Etb">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--FriendRead-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FriendReadViewController" customModule="TabbarApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="FriendRead" image="tabbarHomeHighlighted" id="FcI-aC-SSb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="829" y="306"/>
+        </scene>
+        <!--Expore-->
+        <scene sceneID="l04-VN-fv2">
+            <objects>
+                <viewController id="5a4-kn-wdL" customClass="ExporeViewController" customModule="TabbarApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ekf-9Q-Mox"/>
+                        <viewControllerLayoutGuide type="bottom" id="HMF-bw-tVo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ww5-Pr-jiT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Explore" translatesAutoresizingMaskIntoConstraints="NO" id="qmC-Ce-6LY">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HMF-bw-tVo" firstAttribute="top" secondItem="qmC-Ce-6LY" secondAttribute="bottom" id="2X6-JK-R7X"/>
+                            <constraint firstItem="qmC-Ce-6LY" firstAttribute="top" secondItem="ww5-Pr-jiT" secondAttribute="top" id="Vf5-mv-rPO"/>
+                            <constraint firstAttribute="trailing" secondItem="qmC-Ce-6LY" secondAttribute="trailing" id="oWm-cV-ACE"/>
+                            <constraint firstItem="qmC-Ce-6LY" firstAttribute="leading" secondItem="ww5-Pr-jiT" secondAttribute="leading" id="xzA-xU-cmR"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Expore" image="tabbarExploreHighlighted" id="GUo-2g-7wb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iAK-0D-mJI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="363" y="1055"/>
+        </scene>
+        <!--ReadLater-->
+        <scene sceneID="6kf-Hq-tTS">
+            <objects>
+                <viewController id="HqB-p7-5Rs" customClass="ReadLaterViewController" customModule="TabbarApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vAP-X1-bH1"/>
+                        <viewControllerLayoutGuide type="bottom" id="pEA-hq-w5T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cVS-gY-4gD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Preview1" translatesAutoresizingMaskIntoConstraints="NO" id="tiM-JT-BI7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tiM-JT-BI7" firstAttribute="leading" secondItem="cVS-gY-4gD" secondAttribute="leading" id="0YV-9s-qfm"/>
+                            <constraint firstItem="tiM-JT-BI7" firstAttribute="top" secondItem="cVS-gY-4gD" secondAttribute="top" id="HHP-bS-M1y"/>
+                            <constraint firstItem="pEA-hq-w5T" firstAttribute="top" secondItem="tiM-JT-BI7" secondAttribute="bottom" id="QNW-Nv-CMv"/>
+                            <constraint firstAttribute="trailing" secondItem="tiM-JT-BI7" secondAttribute="trailing" id="zJM-Yu-RpB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ReadLater" image="tabbarProfileHighlighted" id="Ta6-VP-ls3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mgA-Wq-VPm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1456" y="672"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="syI-aj-nC3">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Ztk-2C-Etb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="DK4-FI-SX2">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="EHg-sA-0I2"/>
+                        <segue destination="5a4-kn-wdL" kind="relationship" relationship="viewControllers" id="Ldx-V7-3JD"/>
+                        <segue destination="HqB-p7-5Rs" kind="relationship" relationship="viewControllers" id="gF9-Am-OKi"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PFN-fo-56r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="356"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Explore" width="375" height="667"/>
+        <image name="Preview1" width="375" height="667"/>
+        <image name="tabbarExploreHighlighted" width="23" height="23"/>
+        <image name="tabbarHomeHighlighted" width="24" height="25"/>
+        <image name="tabbarProfileHighlighted" width="16" height="25"/>
+    </resources>
+</document>
