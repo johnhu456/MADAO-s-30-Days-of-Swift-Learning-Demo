@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E01752401CBF446100BB4017 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E017523F1CBF446100BB4017 /* MovieDetailsViewController.swift */; };
+		E01752421CBF470C00BB4017 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E01752411CBF470C00BB4017 /* Main.storyboard */; };
+		E0649A601CBF2A2200152045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0649A5F1CBF2A2200152045 /* AppDelegate.swift */; };
+		E0649A621CBF2A2200152045 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0649A611CBF2A2200152045 /* ViewController.swift */; };
+		E0649A671CBF2A2200152045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0649A661CBF2A2200152045 /* Assets.xcassets */; };
+		E0649A6A1CBF2A2200152045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0649A681CBF2A2200152045 /* LaunchScreen.storyboard */; };
+		E0649A751CBF2A2200152045 /* SpotLightAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0649A741CBF2A2200152045 /* SpotLightAppTests.swift */; };
+		E0649A801CBF2A2200152045 /* SpotLightAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0649A7F1CBF2A2200152045 /* SpotLightAppUITests.swift */; };
+		E0649A8E1CBF2AD900152045 /* MoviesData.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0649A8D1CBF2AD900152045 /* MoviesData.plist */; };
+		E0649A941CBF2B1100152045 /* jurassicworld.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0649A8F1CBF2B1100152045 /* jurassicworld.jpg */; };
+		E0649A951CBF2B1100152045 /* pixels.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0649A901CBF2B1100152045 /* pixels.jpg */; };
+		E0649A961CBF2B1100152045 /* spectre.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0649A911CBF2B1100152045 /* spectre.jpg */; };
+		E0649A971CBF2B1100152045 /* terminatorgenisys.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0649A921CBF2B1100152045 /* terminatorgenisys.jpg */; };
+		E0649A981CBF2B1100152045 /* themartian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0649A931CBF2B1100152045 /* themartian.jpg */; };
+		E0649A9C1CBF2B5F00152045 /* MovieSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0649A9A1CBF2B5F00152045 /* MovieSummaryCell.swift */; };
+		E0649A9D1CBF2B5F00152045 /* MovieSummaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0649A9B1CBF2B5F00152045 /* MovieSummaryCell.xib */; };
+		E0649A9F1CBF2CF500152045 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0649A9E1CBF2CF500152045 /* MovieModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0649A711CBF2A2200152045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0649A541CBF2A2200152045 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0649A5B1CBF2A2200152045;
+			remoteInfo = SpotLightApp;
+		};
+		E0649A7C1CBF2A2200152045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0649A541CBF2A2200152045 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0649A5B1CBF2A2200152045;
+			remoteInfo = SpotLightApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E017523F1CBF446100BB4017 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		E01752411CBF470C00BB4017 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E0649A5C1CBF2A2200152045 /* SpotLightApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotLightApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0649A5F1CBF2A2200152045 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E0649A611CBF2A2200152045 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E0649A661CBF2A2200152045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0649A691CBF2A2200152045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E0649A6B1CBF2A2200152045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0649A701CBF2A2200152045 /* SpotLightAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotLightAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0649A741CBF2A2200152045 /* SpotLightAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotLightAppTests.swift; sourceTree = "<group>"; };
+		E0649A761CBF2A2200152045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0649A7B1CBF2A2200152045 /* SpotLightAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotLightAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0649A7F1CBF2A2200152045 /* SpotLightAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotLightAppUITests.swift; sourceTree = "<group>"; };
+		E0649A811CBF2A2200152045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0649A8D1CBF2AD900152045 /* MoviesData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MoviesData.plist; sourceTree = "<group>"; };
+		E0649A8F1CBF2B1100152045 /* jurassicworld.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jurassicworld.jpg; sourceTree = "<group>"; };
+		E0649A901CBF2B1100152045 /* pixels.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pixels.jpg; sourceTree = "<group>"; };
+		E0649A911CBF2B1100152045 /* spectre.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spectre.jpg; sourceTree = "<group>"; };
+		E0649A921CBF2B1100152045 /* terminatorgenisys.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = terminatorgenisys.jpg; sourceTree = "<group>"; };
+		E0649A931CBF2B1100152045 /* themartian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = themartian.jpg; sourceTree = "<group>"; };
+		E0649A9A1CBF2B5F00152045 /* MovieSummaryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieSummaryCell.swift; sourceTree = "<group>"; };
+		E0649A9B1CBF2B5F00152045 /* MovieSummaryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieSummaryCell.xib; sourceTree = "<group>"; };
+		E0649A9E1CBF2CF500152045 /* MovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0649A591CBF2A2200152045 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0649A6D1CBF2A2200152045 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0649A781CBF2A2200152045 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E0649A531CBF2A2200152045 = {
+			isa = PBXGroup;
+			children = (
+				E0649A5E1CBF2A2200152045 /* SpotLightApp */,
+				E0649A731CBF2A2200152045 /* SpotLightAppTests */,
+				E0649A7E1CBF2A2200152045 /* SpotLightAppUITests */,
+				E0649A5D1CBF2A2200152045 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E0649A5D1CBF2A2200152045 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0649A5C1CBF2A2200152045 /* SpotLightApp.app */,
+				E0649A701CBF2A2200152045 /* SpotLightAppTests.xctest */,
+				E0649A7B1CBF2A2200152045 /* SpotLightAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0649A5E1CBF2A2200152045 /* SpotLightApp */ = {
+			isa = PBXGroup;
+			children = (
+				E0649A5F1CBF2A2200152045 /* AppDelegate.swift */,
+				E0649A611CBF2A2200152045 /* ViewController.swift */,
+				E017523F1CBF446100BB4017 /* MovieDetailsViewController.swift */,
+				E0649A9E1CBF2CF500152045 /* MovieModel.swift */,
+				E0649A9A1CBF2B5F00152045 /* MovieSummaryCell.swift */,
+				E0649A9B1CBF2B5F00152045 /* MovieSummaryCell.xib */,
+				E01752411CBF470C00BB4017 /* Main.storyboard */,
+				E0649A661CBF2A2200152045 /* Assets.xcassets */,
+				E0649A681CBF2A2200152045 /* LaunchScreen.storyboard */,
+				E0649A6B1CBF2A2200152045 /* Info.plist */,
+				E0649A991CBF2B1400152045 /* MovieData */,
+			);
+			path = SpotLightApp;
+			sourceTree = "<group>";
+		};
+		E0649A731CBF2A2200152045 /* SpotLightAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0649A741CBF2A2200152045 /* SpotLightAppTests.swift */,
+				E0649A761CBF2A2200152045 /* Info.plist */,
+			);
+			path = SpotLightAppTests;
+			sourceTree = "<group>";
+		};
+		E0649A7E1CBF2A2200152045 /* SpotLightAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E0649A7F1CBF2A2200152045 /* SpotLightAppUITests.swift */,
+				E0649A811CBF2A2200152045 /* Info.plist */,
+			);
+			path = SpotLightAppUITests;
+			sourceTree = "<group>";
+		};
+		E0649A991CBF2B1400152045 /* MovieData */ = {
+			isa = PBXGroup;
+			children = (
+				E0649A8D1CBF2AD900152045 /* MoviesData.plist */,
+				E0649A8F1CBF2B1100152045 /* jurassicworld.jpg */,
+				E0649A901CBF2B1100152045 /* pixels.jpg */,
+				E0649A911CBF2B1100152045 /* spectre.jpg */,
+				E0649A921CBF2B1100152045 /* terminatorgenisys.jpg */,
+				E0649A931CBF2B1100152045 /* themartian.jpg */,
+			);
+			name = MovieData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0649A5B1CBF2A2200152045 /* SpotLightApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0649A841CBF2A2200152045 /* Build configuration list for PBXNativeTarget "SpotLightApp" */;
+			buildPhases = (
+				E0649A581CBF2A2200152045 /* Sources */,
+				E0649A591CBF2A2200152045 /* Frameworks */,
+				E0649A5A1CBF2A2200152045 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpotLightApp;
+			productName = SpotLightApp;
+			productReference = E0649A5C1CBF2A2200152045 /* SpotLightApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E0649A6F1CBF2A2200152045 /* SpotLightAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0649A871CBF2A2200152045 /* Build configuration list for PBXNativeTarget "SpotLightAppTests" */;
+			buildPhases = (
+				E0649A6C1CBF2A2200152045 /* Sources */,
+				E0649A6D1CBF2A2200152045 /* Frameworks */,
+				E0649A6E1CBF2A2200152045 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0649A721CBF2A2200152045 /* PBXTargetDependency */,
+			);
+			name = SpotLightAppTests;
+			productName = SpotLightAppTests;
+			productReference = E0649A701CBF2A2200152045 /* SpotLightAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E0649A7A1CBF2A2200152045 /* SpotLightAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0649A8A1CBF2A2200152045 /* Build configuration list for PBXNativeTarget "SpotLightAppUITests" */;
+			buildPhases = (
+				E0649A771CBF2A2200152045 /* Sources */,
+				E0649A781CBF2A2200152045 /* Frameworks */,
+				E0649A791CBF2A2200152045 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0649A7D1CBF2A2200152045 /* PBXTargetDependency */,
+			);
+			name = SpotLightAppUITests;
+			productName = SpotLightAppUITests;
+			productReference = E0649A7B1CBF2A2200152045 /* SpotLightAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0649A541CBF2A2200152045 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = MADAO;
+				TargetAttributes = {
+					E0649A5B1CBF2A2200152045 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					E0649A6F1CBF2A2200152045 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E0649A5B1CBF2A2200152045;
+					};
+					E0649A7A1CBF2A2200152045 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E0649A5B1CBF2A2200152045;
+					};
+				};
+			};
+			buildConfigurationList = E0649A571CBF2A2200152045 /* Build configuration list for PBXProject "SpotLightApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E0649A531CBF2A2200152045;
+			productRefGroup = E0649A5D1CBF2A2200152045 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0649A5B1CBF2A2200152045 /* SpotLightApp */,
+				E0649A6F1CBF2A2200152045 /* SpotLightAppTests */,
+				E0649A7A1CBF2A2200152045 /* SpotLightAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0649A5A1CBF2A2200152045 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0649A961CBF2B1100152045 /* spectre.jpg in Resources */,
+				E01752421CBF470C00BB4017 /* Main.storyboard in Resources */,
+				E0649A951CBF2B1100152045 /* pixels.jpg in Resources */,
+				E0649A941CBF2B1100152045 /* jurassicworld.jpg in Resources */,
+				E0649A971CBF2B1100152045 /* terminatorgenisys.jpg in Resources */,
+				E0649A6A1CBF2A2200152045 /* LaunchScreen.storyboard in Resources */,
+				E0649A671CBF2A2200152045 /* Assets.xcassets in Resources */,
+				E0649A981CBF2B1100152045 /* themartian.jpg in Resources */,
+				E0649A8E1CBF2AD900152045 /* MoviesData.plist in Resources */,
+				E0649A9D1CBF2B5F00152045 /* MovieSummaryCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0649A6E1CBF2A2200152045 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0649A791CBF2A2200152045 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0649A581CBF2A2200152045 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E01752401CBF446100BB4017 /* MovieDetailsViewController.swift in Sources */,
+				E0649A9F1CBF2CF500152045 /* MovieModel.swift in Sources */,
+				E0649A621CBF2A2200152045 /* ViewController.swift in Sources */,
+				E0649A601CBF2A2200152045 /* AppDelegate.swift in Sources */,
+				E0649A9C1CBF2B5F00152045 /* MovieSummaryCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0649A6C1CBF2A2200152045 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0649A751CBF2A2200152045 /* SpotLightAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0649A771CBF2A2200152045 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0649A801CBF2A2200152045 /* SpotLightAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0649A721CBF2A2200152045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0649A5B1CBF2A2200152045 /* SpotLightApp */;
+			targetProxy = E0649A711CBF2A2200152045 /* PBXContainerItemProxy */;
+		};
+		E0649A7D1CBF2A2200152045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0649A5B1CBF2A2200152045 /* SpotLightApp */;
+			targetProxy = E0649A7C1CBF2A2200152045 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E0649A681CBF2A2200152045 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0649A691CBF2A2200152045 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0649A821CBF2A2200152045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E0649A831CBF2A2200152045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0649A851CBF2A2200152045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpotLightApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MADAO.SpotLightApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E0649A861CBF2A2200152045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SpotLightApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MADAO.SpotLightApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E0649A881CBF2A2200152045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SpotLightAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MADAO.SpotLightAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpotLightApp.app/SpotLightApp";
+			};
+			name = Debug;
+		};
+		E0649A891CBF2A2200152045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SpotLightAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MADAO.SpotLightAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpotLightApp.app/SpotLightApp";
+			};
+			name = Release;
+		};
+		E0649A8B1CBF2A2200152045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SpotLightAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MADAO.SpotLightAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SpotLightApp;
+			};
+			name = Debug;
+		};
+		E0649A8C1CBF2A2200152045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SpotLightAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MADAO.SpotLightAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SpotLightApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0649A571CBF2A2200152045 /* Build configuration list for PBXProject "SpotLightApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0649A821CBF2A2200152045 /* Debug */,
+				E0649A831CBF2A2200152045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0649A841CBF2A2200152045 /* Build configuration list for PBXNativeTarget "SpotLightApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0649A851CBF2A2200152045 /* Debug */,
+				E0649A861CBF2A2200152045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0649A871CBF2A2200152045 /* Build configuration list for PBXNativeTarget "SpotLightAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0649A881CBF2A2200152045 /* Debug */,
+				E0649A891CBF2A2200152045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0649A8A1CBF2A2200152045 /* Build configuration list for PBXNativeTarget "SpotLightAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0649A8B1CBF2A2200152045 /* Debug */,
+				E0649A8C1CBF2A2200152045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0649A541CBF2A2200152045 /* Project object */;
+}
